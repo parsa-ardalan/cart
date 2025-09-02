@@ -30,28 +30,18 @@ body {
   background-color: black;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  animation-name: changeBackgroundColor;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation: changeBackgroundColor 2s ease 1s normal forwards;
 }
 
 #container {
 
   margin-top: 0;
-  animation: scrollTop 1.5s 4s forwards ease;
+  animation: scrollTop 1.5s ease 4s forwards;
 }
 
 #shoes {
   margin-right: -70%;
-  animation-name: shoesComeIn;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-timing-function: ease;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation: shoesComeIn 2s ease 2s normal forwards;
 }
 
 #link-to-products {

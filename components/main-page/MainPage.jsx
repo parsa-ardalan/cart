@@ -15,9 +15,9 @@ const MainPage = () => {
 
                 <p className="text-md mt-3 text-black md:text-2xl md:text-right"> look at our products and let your feet decide </p>
 
-                <Link href={"#"} className="flex w-full items-end justify-center" id="link-to-products">
+                <Link href={"./products"} className="flex w-full items-end md:justify-center animate-pulse" id="link-to-products">
 
-                    <p className="text-md mt-7 text-black md:text-2xl md:text-center"> visit the products </p>
+                    <p className="text-md mt-10 text-black md:text-2xl duration-500 hover:ml-6"> visit the products </p>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mb-1 ml-2 text-black">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />

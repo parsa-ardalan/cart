@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import MainPage from "@/components/main-page/MainPage";
 import App from "@/pages/app"
 import Header from "@/components/header/Header";

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "name": "black Nike",
+        "imageAddress": "/product-images/black-nike.png",
+        "price": 147.00,
+        "info": "versatile pair of shoes. wear it everywhere."
+    },
+    {
+        "id": 1,
+        "name": "green adidas",
+        "imageAddress": "/product-images/adidas.png",
+        "price": 128.99,
+        "info": "lauxury, goes with street styles."
+    },
+    {
+        "id": 2,
+        "name": "white nike",
+        "imageAddress": "/product-images/white-nike.png",
+        "price": 134.99,
+        "info": "white to wear. just do it!"
+    },
+    {
+        "id": 3,
+        "name": "dark new balance",
+        "imageAddress": "/product-images/new-balance.png",
+        "price": 199.00,
+        "info": "new balance for those who cares to dress."
+    }
+]
