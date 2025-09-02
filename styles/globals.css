@@ -1,0 +1,91 @@
+/* tailwind css  */
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+/* element styles */
+
+body {
+
+  background: var(--background);
+  background-color: black;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  animation-name: changeBackgroundColor;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+#container {
+
+  margin-top: 0;
+  animation: scrollTop 1.5s 4s forwards ease;
+}
+
+#shoes {
+  margin-right: -70%;
+  animation-name: shoesComeIn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+
+/* animation keyframes */
+
+
+@keyframes shoesComeIn {
+  0% {
+    margin-right: -60%;
+  }
+
+  100% {
+    margin-right: 0;
+  }
+}
+
+
+@keyframes scrollTop {
+
+  0% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -5%;
+  }
+}
