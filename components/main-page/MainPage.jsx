@@ -1,5 +1,6 @@
 import Image from "next/image";
 import shoes from "@/public/general/shoes.png"
+import Link from "next/link";
 
 
 const MainPage = () => {
@@ -13,6 +14,16 @@ const MainPage = () => {
                 <h1 className="text-3xl text-black md:text-5xl md:text-center"> Feet Fit store </h1>
 
                 <p className="text-md mt-3 text-black md:text-2xl md:text-right"> look at our products and let your feet decide </p>
+
+                <Link href={"#"} className="flex w-full items-end justify-center" id="link-to-products">
+
+                    <p className="text-md mt-7 text-black md:text-2xl md:text-center"> visit the products </p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mb-1 ml-2 text-black">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </Link>
 
             </div>
 
