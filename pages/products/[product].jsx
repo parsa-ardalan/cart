@@ -1,17 +1,24 @@
 import Image from "next/image";
 import { useRouter } from "next/router"
+import { useDispatch } from "react-redux";
+import ProductSlice from "@/redux/productSlice";
+import Link from "next/link";
 
 export default function Product() {
 
-    
+
+    // router and data codes
+
     const data = useRouter();
-    
+
+    // redux codes
+
+    const dispatch = useDispatch();
+
     if (!data.isReady) return null;
 
     const product = { id: data.query.id, name: data.query.name, price: data.query.price, image: data.query.img, info: data.query.info };
-    
 
-    console.log(data.query);
 
 
     return (
@@ -42,9 +49,18 @@ export default function Product() {
                 {/* cart button */}
                 <div className="flex items-end justify-end col-span-1 pb-3 pr-3">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 text-black">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+                    <Link href={"/cart"}>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24"
+                            strokeWidth={1.5} stroke="currentColor"
+                            className="size-8 text-black"
+
+                            onClick={() => { dispatch(ProductSlice.actions.add(product)) }}
+                        >
+
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </Link>
 
                 </div>
             </div>
