@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function EachProduct(props) {
+export default function EachProduct(props) {    
 
     return (
 
@@ -20,6 +20,7 @@ export default function EachProduct(props) {
 
             className="flex col-span-12 h-28 md:col-span-6 shadow-md shadow-black bg-black/10 rounded-xl"
         >
+
 
             {/* image div */}
 

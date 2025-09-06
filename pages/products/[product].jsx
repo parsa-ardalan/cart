@@ -20,7 +20,6 @@ export default function Product() {
     const product = { id: data.query.id, name: data.query.name, price: data.query.price, image: data.query.img, info: data.query.info };
 
 
-
     return (
 
         <div className="w-screen h-screen md:px-72 md:py-20">
